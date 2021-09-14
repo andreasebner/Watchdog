@@ -23,7 +23,7 @@ include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/set_default_flags.cmake)
 include(cmake/add_dependency.cmake)
 add_dependency(ChimeraTK-ApplicationCore 02.02 REQUIRED)
 
-add_dependency(ChimeraTK-ApplicationCore-MicroDAQ 01.01)
+add_dependency(ChimeraTK-ApplicationCore-MicroDAQ 01.01 OPTIONAL)
 if(NOT ChimeraTK-ApplicationCore-MicroDAQ_FOUND)
   message(STATUS "ChimeraTK-ApplicationCore-MicroDAQ not found. ChimeraTK based DAQ will not be available.")
 endif(NOT ChimeraTK-ApplicationCore-MicroDAQ_FOUND)
